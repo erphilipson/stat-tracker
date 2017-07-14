@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Add activities</title>
+  </head>
+  <body>
+    <form action="/api/activities" method="post">
+      
+      <label for="title">What did you do?</label>
+      <input type="text" name="title">
+
+      <label for="quantity">How many times?</label>
+      <input type="number" name="quantity">
+
+      <label for="date">When?</label>
+      <input type="text" name="date" placeholder="MM/DD/YYYY">
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
