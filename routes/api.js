@@ -21,8 +21,8 @@ router.post('/activities', function(req, res) {
   Activity.insertMany
   ({
     title: req.body.title,
-    quantity: req.body.quantity,
-    date: req.body.date,
+    // quantity: req.body.quantity,
+    date: req.body.date
   });
   Activity.find().then(function(activities) {
     res.json(activities);
